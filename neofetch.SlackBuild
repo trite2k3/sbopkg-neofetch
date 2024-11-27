@@ -75,7 +75,7 @@ chmod -R u+w,go+r-w,a-s .
 # Install everything into the package directory, but exit if anything goes wrong
 make PREFIX=$PKG install || exit
 
-i# Create a directory for documentation
+# Create a directory for documentation
 mkdir -p $PKG/usr/doc/$APP-$VERSION
 
 # Copy documentation to the docs directory and fix permissions
